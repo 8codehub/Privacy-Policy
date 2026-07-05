@@ -4,69 +4,187 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Privacy Policy - ChatNote | Simple Notes</title>
+    <style>
+        :root {
+            --bg: #f7f8fa;
+            --card: #ffffff;
+            --text: #1f2933;
+            --muted: #6b7280;
+            --heading: #111827;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f1115;
+                --card: #171a21;
+                --text: #d3d7de;
+                --muted: #9aa1ac;
+                --heading: #f3f4f6;
+                --accent: #60a5fa;
+                --border: #2a2f3a;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 2rem 1rem;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            color: var(--heading);
+            font-size: 1.9rem;
+            margin: 0 0 0.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            color: var(--heading);
+            font-size: 1.15rem;
+            margin: 2rem 0 0.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        .effective-date {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin: 0 0 1.5rem;
+        }
+
+        p { margin: 0.5rem 0; }
+
+        ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+
+        li { margin: 0.35rem 0; }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        strong { color: var(--heading); }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            border: none;
+            margin: 1.5rem 0 0;
+        }
+
+        footer {
+            max-width: 720px;
+            margin: 1.5rem auto 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 1rem 0.75rem; }
+            main { padding: 1.5rem; border-radius: 10px; }
+            h1 { font-size: 1.6rem; }
+        }
+    </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p>Effective date: [Insert Date]</p>
+<main>
+    <h1>Privacy Policy</h1>
+    <!-- The effective date is fixed on purpose. Update it only when the policy actually changes. -->
+    <p class="effective-date">Effective date: <time id="effective-date" datetime="2026-07-05">July 5, 2026</time></p>
 
-<h2>1. Introduction</h2>
-<p>Welcome to <strong>ChatNote | Simple Notes</strong> ("App"). This Privacy Policy explains how we
-    collect, use, disclose, and safeguard your information when you use our app.</p>
+    <h2>1. Introduction</h2>
+    <p>Welcome to <strong>ChatNote | Simple Notes</strong> ("App"). This Privacy Policy explains how we
+        collect, use, disclose, and safeguard your information when you use our app.</p>
 
-<h2>2. Developer Information</h2>
-<p><strong>Developer:</strong> Hovsep Arakelyan</p>
-<p><strong>Contact Email:</strong> <a
-        href="mailto:help.chatnote@gmail.com">help.chatnote@gmail.com</a></p>
+    <h2>2. Developer Information</h2>
+    <p><strong>Developer:</strong> Hovsep Arakelyan</p>
+    <p><strong>Contact Email:</strong> <a
+            href="mailto:help.chatnote@gmail.com">help.chatnote@gmail.com</a></p>
 
-<h2>3. Information We Collect</h2>
-<p>We collect the following information when you use the app:</p>
-<ul>
-    <li><strong>Analytics Data:</strong> We collect anonymous analytics data to improve the app
-        experience.
-    </li>
-</ul>
+    <h2>3. Information We Collect</h2>
+    <p>We collect the following information when you use the app:</p>
+    <ul>
+        <li><strong>Analytics Data:</strong> We collect anonymous analytics data to improve the app
+            experience.
+        </li>
+    </ul>
 
-<h2>4. How We Use Your Information</h2>
-<p>Your data is used for the following purposes:</p>
-<ul>
-    <li>To provide and maintain the app.</li>
-    <li>To analyze app performance and improve features.</li>
-    <li>To send push notifications, if enabled.</li>
-</ul>
+    <h2>4. How We Use Your Information</h2>
+    <p>Your data is used for the following purposes:</p>
+    <ul>
+        <li>To provide and maintain the app.</li>
+        <li>To analyze app performance and improve features.</li>
+        <li>To send push notifications, if enabled.</li>
+    </ul>
 
-<h2>5. Data Storage & Security</h2>
-<p>Your data is stored in the following locations:</p>
-<ul>
-    <li><strong>Locally:</strong> Notes are stored in the device using Room Database.</li>
-    <li><strong>Cloud Storage:</strong> User-related data is stored on Firebase.</li>
-</ul>
-<p>Note: While we take reasonable steps to secure your data, we do not use special encryption
-    mechanisms in our local storage.</p>
+    <h2>5. Data Storage &amp; Security</h2>
+    <p>Your data is stored in the following locations:</p>
+    <ul>
+        <li><strong>Locally:</strong> Notes are stored in the device using Room Database.</li>
+        <li><strong>Cloud Storage:</strong> User-related data is stored on Firebase.</li>
+    </ul>
+    <p>Note: While we take reasonable steps to secure your data, we do not use special encryption
+        mechanisms in our local storage.</p>
 
-<h2>6. Data Deletion</h2>
-<p>You can delete your data by removing folders within the app.</p>
+    <h2>6. Data Deletion</h2>
+    <p>You can delete your data by removing folders within the app.</p>
 
-<h2>7. Permissions Required</h2>
-<p>The app requires the following permission:</p>
-<ul>
-    <li><strong>Internet Access:</strong> Used for sending analytics and enabling push
-        notifications.
-    </li>
-</ul>
+    <h2>7. Permissions Required</h2>
+    <p>The app requires the following permission:</p>
+    <ul>
+        <li><strong>Internet Access:</strong> Used for sending analytics and enabling push
+            notifications.
+        </li>
+    </ul>
 
-<h2>8. Third-Party Services</h2>
-<p>The app does not share data with third-party services except for Firebase, which we use for
-    analytics and push notifications.</p>
+    <h2>8. Third-Party Services</h2>
+    <p>The app does not share data with third-party services except for Firebase, which we use for
+        analytics and push notifications.</p>
 
-<h2>9. Advertising</h2>
-<p>The app does not display ads.</p>
+    <h2>9. Advertising</h2>
+    <p>The app does not display ads.</p>
 
-<h2>10. Privacy Policy Updates</h2>
-<p>We may update this Privacy Policy from time to time as necessary. Users will be notified of any
-    significant changes.</p>
+    <h2>10. Privacy Policy Updates</h2>
+    <p>We may update this Privacy Policy from time to time as necessary. Users will be notified of any
+        significant changes.</p>
 
-<h2>11. Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, please contact us at <a
-        href="mailto:help.chatnote@gmail.com">help.chatnote@gmail.com</a>.</p>
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at <a
+            href="mailto:help.chatnote@gmail.com">help.chatnote@gmail.com</a>.</p>
+
+    <hr class="divider">
+</main>
+
+<footer>
+    &copy; <span id="year">2026</span> ChatNote &middot; Simple Notes
+</footer>
+
+<script>
+    // Effective date is intentionally FIXED (a privacy policy must show when it took
+    // effect, not the day you happen to view it). To change it, edit both the
+    // datetime attribute and the visible text on the #effective-date element above.
+    // The only value auto-updated here is the copyright year in the footer.
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
