@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyEnglish – Delete Your Account</title>
+
+    <style>
+        :root {
+            --bg: #f6f8fb;
+            --card: #ffffff;
+            --text: #2d3748;
+            --heading: #111827;
+            --muted: #6b7280;
+            --accent: #4d8dff;
+            --border: #e5e7eb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f1115;
+                --card: #171a21;
+                --text: #d5dae2;
+                --heading: #ffffff;
+                --muted: #98a1ad;
+                --accent: #61a0ff;
+                --border: #2a3038;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem 1rem;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.8rem;
+            border-top: 5px solid var(--accent);
+            box-shadow: 0 2px 10px rgba(0,0,0,.05);
+        }
+
+        h1{
+            color: var(--heading);
+            margin:0;
+            font-size:2rem;
+        }
+
+        h2{
+            margin-top:2.4rem;
+            color:var(--heading);
+            border-left:4px solid var(--accent);
+            padding-left:.7rem;
+            font-size:1.2rem;
+        }
+
+        p{
+            margin:.8rem 0;
+        }
+
+        ul{
+            padding-left:1.4rem;
+        }
+
+        li{
+            margin:.45rem 0;
+        }
+
+        strong{
+            color:var(--heading);
+        }
+
+        .app{
+            color:var(--accent);
+            font-weight:700;
+            font-size:.82rem;
+            letter-spacing:.08em;
+        }
+
+        .date{
+            color:var(--muted);
+            margin-top:.4rem;
+            margin-bottom:2rem;
+        }
+
+        hr{
+            margin-top:3rem;
+            border:none;
+            border-top:1px solid var(--border);
+        }
+
+        footer{
+            max-width:900px;
+            margin:1.5rem auto;
+            text-align:center;
+            color:var(--muted);
+            font-size:.85rem;
+        }
+
+        a{
+            color:var(--accent);
+            text-decoration:none;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+
+        @media(max-width:700px){
+            main{
+                padding:1.6rem;
+            }
+
+            h1{
+                font-size:1.7rem;
+            }
+        }
+
+        ol{ padding-left:1.4rem; }
+        .box{
+            background:var(--bg);
+            border:1px solid var(--border);
+            border-radius:12px;
+            padding:1rem 1.4rem;
+            margin:1.4rem 0;
+        }
+    </style>
+
+</head>
+<body>
+
+<main>
+
+    <span class="app">MyEnglish</span>
+
+    <h1>Delete Your Account</h1>
+
+    <p class="date">Developer: Hovsep Arakelyan</p>
+
+    <div class="box">
+        <p><strong>Delete your profile from the app settings:</strong></p>
+        <ol>
+            <li>Open the <strong>MyEnglish</strong> app and sign in.</li>
+            <li>Go to the <strong>Profile</strong> tab (<strong>Պրոֆիլ</strong>), where the app settings are.</li>
+            <li>Scroll down and tap <strong>Delete account</strong> (<strong>Ջնջել հաշիվը</strong>).</li>
+            <li>Confirm by tapping <strong>Delete</strong> (<strong>Ջնջել</strong>).</li>
+        </ol>
+        <p>Your account and all its data are deleted right away.</p>
+    </div>
+
+    <p>
+        If the app asks you to sign in again for security, sign out, sign back in with the same
+        Google account, and repeat the steps.
+    </p>
+
+    <h2>No access to the app?</h2>
+
+    <p>
+        Email <a href="mailto:arakelyan.sep@gmail.com">arakelyan.sep@gmail.com</a> with the subject <strong>"Delete MyEnglish account"</strong> and include your
+        nickname or the Google account email you signed in with. We will delete your account and data
+        within 30 days and confirm by email.
+    </p>
+
+    <h2>What is deleted</h2>
+
+    <ul>
+        <li>Your sign-in account (Firebase Authentication)</li>
+        <li>Your learning profile: nickname, buddy and accessories, birth year, parent email</li>
+        <li>Your progress: lessons, words, XP, streak</li>
+        <li>Your league entries</li>
+    </ul>
+
+    <h2>What is kept</h2>
+
+    <p>
+        Nothing is kept on our servers after deletion. Settings stored only on your device
+        (theme, reminder time) are removed when you uninstall the app. Support emails are kept only as
+        long as needed to handle your request.
+    </p>
+
+    <p>
+        See the full <a href="../">MyEnglish Privacy Policy</a>.
+    </p>
+
+</main>
+
+</body>
+</html>
