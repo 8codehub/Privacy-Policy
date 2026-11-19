@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Privacy Policy - ChatNote | Simple Notes</title>
+    <title>Privacy Policy - NoteIt | Simple Notes</title>
     <style>
         :root {
             --bg: #f7f8fa;
@@ -121,13 +121,13 @@
 </head>
 <body>
 <main>
-    <span class="app-name">ChatNote &middot; Simple Notes</span>
+    <span class="app-name">NoteIt &middot; Simple Notes</span>
     <h1>Privacy Policy</h1>
     <!-- The effective date is fixed on purpose. Update it only when the policy actually changes. -->
-    <p class="effective-date">Effective date: <time id="effective-date" datetime="2025-02-01">February 1, 2025</time></p>
+    <p class="effective-date">Effective date: <time id="effective-date" datetime="2026-11-19">November 19, 2026</time></p>
 
     <h2>1. Introduction</h2>
-    <p>Welcome to <strong>ChatNote | Simple Notes</strong> ("App"). This Privacy Policy explains how we
+    <p>Welcome to <strong>NoteIt | Simple Notes</strong> ("App"), formerly ChatNote. This Privacy Policy explains how we
         collect, use, disclose, and safeguard your information when you use our app.</p>
 
     <h2>2. Developer Information</h2>
@@ -170,10 +170,17 @@
             notifications.
         </li>
         <li><strong>Notifications:</strong> Used to send you news and notifications about app
-            updates.
+            updates, and to show what is being read while the read-aloud feature is playing.
         </li>
         <li><strong>Storage / File Download:</strong> Used to download additional files required
-            for the voice-to-text feature.
+            for the voice-to-text and read-aloud features.
+        </li>
+        <li><strong>Foreground Service (Media Playback):</strong> Used only while a note is being
+            read aloud, so reading continues when the app is in the background or the screen is
+            locked. It stops when reading ends.
+        </li>
+        <li><strong>Fingerprint / Biometrics:</strong> Used only if you turn on app lock. Your
+            fingerprint is checked by the Android system; the app never receives or stores it.
         </li>
         <li><strong>Camera:</strong> Used to take pictures and videos so you can save them as
             notes.
@@ -189,6 +196,13 @@
     <p>For the voice-to-text feature, the app uses <strong>Vosk</strong>, an offline speech
         recognition toolkit. Audio is transcribed <strong>locally on your device</strong> and is
         <strong>not sent to any external server</strong>.</p>
+    <p>For the read-aloud (text-to-speech) feature, speech is generated <strong>locally on your
+        device</strong>. The text of your notes is <strong>never sent to any server</strong>. When
+        you choose a language for the first time, its voice files are downloaded from
+        <a href="https://github.com/8codehub/reading-voice-models">GitHub</a>. As with any download,
+        GitHub receives your device's IP address and standard request information; see the
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub
+        Privacy Statement</a>. No account or personal information is involved.</p>
 
     <h2>9. Advertising</h2>
     <p>The app does not display ads.</p>
@@ -205,7 +219,7 @@
 </main>
 
 <footer>
-    &copy; <span id="year">2026</span> ChatNote &middot; Simple Notes
+    &copy; <span id="year">2026</span> NoteIt &middot; Simple Notes
 </footer>
 
 <script>
